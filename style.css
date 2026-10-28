@@ -1,0 +1,379 @@
+/* HEADER */
+.nav-w .premium-ver-hamburger-menu .premium-vertical-toggle-open, .nav-w .premium-mobile-menu-outer-container{
+    transition-duration: 200ms!important;
+    z-index: 1000!important;
+}
+.nav-w .premium-mobile-menu-container li, .nav-w .premium-mobile-menu-container li>.premium-mega-content-container{
+    width: auto!important;
+}
+/* Customized home and Contact nav  */
+.nav-w .pa-menu-home{
+	display: none
+}
+.nav-w .qtn-btn .premium-menu-link-parent::after{
+	height: 0!important
+}
+.nav-w .qtn-btn .premium-menu-link{
+	
+	mask-image: url('https://pickmywaste.in/wp-content/uploads/2026/04/btn-bulb.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+	font-family: poppins!important;
+	border-radius: 100px;
+	padding: 0 15px!important;
+	color: white!important;
+	background-color: #4BB213;
+}
+.nav-w .qtn-btn .premium-menu-link:hover{
+	background-color: #317C08;
+}
+.nav-w .qtn-btn.premium-active-item > .premium-menu-link{
+	background-color: #317C08;
+}
+
+@media screen and (max-width: 767px){
+	.nav-w .pa-menu-home{
+	display: block;
+}
+	.nav-w :is(.premium-mobile-menu-outer-container, .premium-nav-slide-overlay) {
+    position: fixed!important;
+    overflow: hidden!important;
+    touch-action: none!important;
+}
+	.nav-w .qtn-btn .premium-menu-link{
+		mask-size: cover;	
+		margin-top: 10px;
+		padding: 9px 20px!important;
+	}
+	.nav-w .premium-mobile-menu-container ul li:not(:last-child) a {
+		background-color: transparent;
+    background-image: linear-gradient(90deg, var(--e-global-color-006c79e) 0%, var(--e-global-color-0d34cde) 100%);
+		border: solid var(--e-global-color-006c79e);
+		border-width: 0 1px 1px 0;
+}
+	.nav-w .premium-mobile-menu-container ul li:not(:last-child) a:hover{
+		background-color: transparent;
+    background-image: linear-gradient(90deg, var(--e-global-color-e87dca3) 0%, var(--e-global-color-0d34cde) 100%);
+	}
+	.nav-w .premium-mobile-menu-container ul li:not(:last-child).premium-active-item a{
+		background-image: linear-gradient(90deg, var(--e-global-color-006c79e) 0%, var(--e-global-color-e87dca3) 100%);
+		box-shadow: 2px 3px 1px -1px #2F7B0450;
+	}
+	.nav-w .premium-sub-menu .premium-sub-menu-link{
+		border-radius: 50px;
+	}
+}
+/* --- HEADER ENDED --- */
+
+/* BODY & FOOTER */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+		min-height: 100svh;
+    margin: 0;
+}
+body > *:not(.elementor-37):not(.elementor-17) {
+    flex: 1 0 auto;
+}
+.elementor-37 {
+    flex-shrink: 0;
+    margin-top: auto !important;
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: .45em;
+}
+::-webkit-scrollbar-track{
+	background-color: #E2EEE270;
+	border-radius: 100px;
+	box-shadow: 1px 1px 1px 0 #04310A50 inset;
+}
+::-webkit-scrollbar-thumb {
+  background: #4FC8EC;
+  border-radius: 100px;
+	box-shadow: 1px 1px 1px 0 #ffffff inset;
+}
+/* --- BODY ENDED --- */
+
+/* Hero section icon list gapping */
+.dekstop-hero-iconlist .elementor-icon-list-items.elementor-inline-items{
+	gap: 10px 0;
+}
+/* Hero section bg overlay for mobile */
+@media screen and (max-width: 767px){
+	.m_home_hero::before{
+		background-image: linear-gradient(360deg, #00000000 0%, #000000 90%) !important
+}
+}
+/* FAQ */
+.faq-accor .wpr-acc-button{
+    margin-bottom: 13px!important;
+}
+.faq-accor .wpr-acc-panel{
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+/* Breadcrumbs */
+.content-w .eael-breadcrumbs__content{
+	align-items: center
+}
+
+/* --EVENT GRID & Post structure-- */
+.events-grid .eael-entry-wrapper{
+	padding: 3.2%;
+}
+/* i. event grid in archive */
+.events-grid .eael-entry-title a{
+	color: #2C2B2A!important
+}
+.events-grid .eael-entry-media, .blogs-grid .eael-entry-media{
+	border-radius: 10px;
+}
+.events-grid .eael-entry-meta{
+		font-size: 0;
+		min-height: 65px;
+		height: auto;
+		max-height: 80px;
+    padding: 4% 1.5% 0 1.5%;
+    width: 100%;
+		border-top: 1px dashed #777;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: start;
+		gap: 10% 2%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+}
+.events-grid .eael-entry-meta .eael-meta-posted-on{
+	font-size: .8rem!important;
+	color: #3D8F10!important;
+	margin: 0;
+	width: auto;
+	max-width: 40%;
+}
+.events-grid .ev-meta-item.ev-time{
+	width: auto;
+	max-width: 25%;
+	font-size: .8rem!important;
+}
+.events-grid .ev-meta-item.ev-duration{
+	max-width: 20%;
+	font-size: .8rem!important;
+}
+.events-grid .ev-meta-item.ev-loc{
+	min-width: 60%;
+	max-width: 95%;
+	font-size: .8rem!important;
+	white-space: normal;
+}
+.events-grid .ev-meta-item {
+	color: #094411!important;
+}
+.events-grid .ev-sep {
+	font-size: .8rem!important;
+	color: #094411!important;
+  opacity: 0.6 !important;
+}
+.events-grid .eael-entry-meta i{
+	margin-right: 4px!important
+}
+/* Force hide any native duplicate background clocks remaining from the widget */
+.events-grid .eael-meta-posted-on > i.fa-clock,
+.events-grid .eael-grid-post-meta time span.screen-reader-text {
+    display: none !important;
+    visibility: hidden !important;
+}
+.uc-events .eael-grid-post-holder{
+	pointer-events: none!important;
+	cursor: default!important;
+}
+
+.events-grid .eael-grid-post-excerpt p, .blogs-grid .eael-grid-post-excerpt p{
+	display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+	height: 51px;
+}
+.events-grid .eael-entry-title a, .blogs-grid .eael-entry-title a{
+	display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.events-grid .eael-grid-post-holder:hover, .blogs-grid .eael-grid-post-holder:hover{
+	transform: translateY(-5px);
+	transition-duration: 200ms
+}
+.events-grid .eael-posted-by{
+	display: none;
+}
+/* ii. upcoming events custom content when there is no events */
+.uc-events .eael-post-grid-container p.no-posts-found {
+    font-size: 0 !important;
+    text-transform: none !important; 
+    color: #000000 !important;
+    text-align: center !important;
+    display: block !important;
+    padding: 3% 10% !important;
+    margin: 0 2.5%;
+    border-radius: 15px;
+    background-color: #F2F5F7 ;
+}
+
+.uc-events .eael-post-grid-container p.no-posts-found::before {
+    content: "More exciting green events are coming soon, stay tuned." !important; 
+    font-size: .95rem !important; 
+    font-family: 'Poppins', sans-serif !important;
+}
+/* iii. post structure */
+.post-struc-meta .single-post-ev-meta{
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 5px 2%!important;
+}
+.post-struc-meta .single-post-ev-meta i{
+    color: #094411;
+}
+.post-struc-meta .single-post-ev-meta .ev-meta-item.ev-loc{
+    width: 100%;
+}
+@media screen and (max-width: 767px){
+	.post-struc-meta .single-post-ev-meta{
+	justify-content: center;
+	}
+}
+.post-content H2{
+	margin-top: 4%;
+	margin-bottom: 1.5%;
+	color: #2C2B2A;
+	font-family: comfortaa;
+	font-size: 1.1rem!important;
+	text-transform: capitalize!important;
+}
+.recent-w .recent-events{
+		position: -webkit-sticky;
+    position: sticky;
+    top: 17%;
+}
+
+/* QUOTATION FORM */
+.qt-from .wpcf7-spinner, .qt-from .screen-reader-response{
+    display: none;
+}
+.qt-from .wpcf7-form{
+	display: flex!important;
+	flex-direction: column;
+	gap: 12px;
+}
+.qt-side-by-side p{
+	display: flex;
+	flex-direction: row;
+	gap: 0 5px;
+	align-items: start;
+	justify-content: space-between;
+	max-width: 100%;
+	margin: 0!important
+}
+.qt-side-by-side p [data-name="qtf-date"]{
+	width: 50%!important;
+}
+.qt-side-by-side p [data-name="qtf-pin"]{
+	width: 50%!important
+}
+.qt_pin ~ .wpcf7-not-valid-tip {
+	font-size: 0!important;
+  visibility: hidden;
+}
+.qt_pin ~ .wpcf7-not-valid-tip::after, .qt_date ~ .wpcf7-not-valid-tip {
+  font-size: 8px!important;
+  visibility: visible;
+}
+.qt_pin ~ .wpcf7-not-valid-tip::after{
+  content: "Enter 6-digit PIN.";
+	position: relative;
+	top: 5px!important
+}
+.qt-from .qt_add{
+	margin-bottom: -3px!important;
+}
+.qt-from .wpcf7-response-output{
+	border: none!important;
+	padding: 0!important;
+	margin: 1% 0.5% 1%!important;
+}
+
+@media screen and (max-width: 767px){
+/* 	date placeholder logic for mobile */
+	.qt_date:before {
+    content: attr(placeholder);
+    color: #6d6d6d;
+    width: 100%;
+		position: absolute;
+		pointer-events: none; 
+    display: block;
+}
+	.qt_date:focus:before,
+.qt_date.has-value:before {
+    content: "";
+    display: none;
+}
+	.qt-side-by-side p [data-name="qtf-date"] input {
+    -webkit-appearance: none;
+}
+	.qt-from .wpcf7-form{
+		gap: 10px;
+}
+	.qt-from .qt_add{
+	margin-bottom: -1px!important;
+}
+}
+/* Services btns position fix */
+.servc-btns, .servc-btns-templt{
+	margin-top: auto !important;
+}
+
+/* +++ Common Things +++ */
+
+/* i. ICON MASKING */
+
+/* 1. Cog Gear Masking */
+.cog-gear-mask .elementor-icon, .cog-gear-mask .why-pmw-flip .eael-elements-flip-box-icon-image{
+		-webkit-mask-image: url('/wp-content/uploads/2026/04/filled-cog-gear.svg');
+    mask-image: url('/wp-content/uploads/2026/04/filled-cog-gear.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+/* -------- */
+.joint-gear-mask .g-bg-icon .eael-elements-flip-box-icon-image{
+		background-color: var(--e-global-color-accent);
+}
+/* -------- */
+.joint-gear-mask .b-bg-icon .eael-elements-flip-box-icon-image{
+		background-color: var(--e-global-color-primary);
+}
+
+/* 2. Joint Gear Masking */
+.joint-gear-mask .elementor-icon, .ekit_socialshare > li > div, .joint-gear-mask .eael-elements-flip-box-icon-image{
+		-webkit-mask-image: url('/wp-content/uploads/2026/04/filled-joint-gear.svg');
+    mask-image: url('/wp-content/uploads/2026/04/filled-joint-gear.svg');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+/* ii. icons in icon box center align */
+.elementor-icon-box-icon, .elementor-widget-icon{
+	align-self: center
+}
