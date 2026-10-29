@@ -51,11 +51,9 @@ This repository houses a production-grade, high-performance WordPress custom chi
 ## 📁 Repository Structure
 
 ```text
-PMW-development/
-├── all_js/
-│   └── cf7-whatsapp-integration.js  # Form field capture and WhatsApp link logic
-├── functions.php                    # Core backend logic, hooks, validation & CPT registrations
-├── header.php                       # Custom header override with analytics & verification tags
-├── footer.php                       # Custom footer override & structural wrappers
-├── style.css                        # Child theme stylesheet & custom UI components
-└── .gitignore                       # Security configuration (excludes .env & environment secrets)
+├── functions.php                    # Core logic, enqueue scripts & hooks
+├── header.php                       # Custom header override
+├── footer.php                       # Custom footer override
+├── style.css                        # All css
+├── cf7-whatsapp-integration.js     # Form field secure logic
+└── globe-integration.js            # 3D Globe visualization script
